@@ -1,0 +1,189 @@
+
+
+
+
+
+
+
+/*
+///////////////////////////////// KEY /////////////////////////////////////
+	
+	기본키(PRIMARY KEY) : 주민등록번호처럼 테이블의 각 레코드(테이블의 행)들을 고유하게 식별해주는 역할
+	특징 :
+	(1)속성이 항상 고유한 값을 가져야한다.
+	(2)속성이 확실히 널 값을 가지면 안된다.(NOT NULL)
+	(3)속성의 값이 변경될 가능성이 높은 속성은 기본키로 선정X
+	(4)테이블에 기본키는 하나만 만들 수 있다.
+	
+	후보키(CANDIDATE KEY) : 기본키가 될 수 있는 후보 (ex) 주민등록번호(기본키), 핸드폰번호(후보키)
+	특징 :
+	(1) NOT NULL
+	(2) 대체키(ALTERNATE KEY)와 기본키(PRIMARY KEY)가 포함 됨. 선택 되어짐
+	
+	복합키(COMPOSITE KEY) : 각 튜플들을 식별할 수 있는 두개 또는 그 이상의 속성들로 구성된 후보키
+	
+	슈퍼키 : 유일성은 만족하지만, 최소성은 만족X
+	(EX) (주민등록번호,이름)=슈퍼키 보단 (주민등록번호)=기본키가 최소성을 만족시킴,
+	
+	유일성 : 하나의 키 값으로 하나의 튜플을 유일하게 식별
+	최소성 : 키를 구성하는 속성 하나를 제거하면 유일하게 식별할 수 없도록 꼭 필요한 최소의 속성으로 구성
+*/
+/*기본키*/
+MySQL
+CREATE TABLE dept
+(
+	sid INTEGER,
+	last_name VARCHAR(30),
+	first_name VARCHAR(30),
+	PRIMARY KEY (sid)
+);
+Oracle
+CREATE TABLE dept
+(
+	sid INTEGER PRIMARY KEY,
+	last_name VARCHAR(30),
+	first_name VARCHAR(30)
+);
+
+MySQL
+ALTER TABLE customer ADD PRIMARY KEY (sid);
+
+Oracle
+ALTER TABLE customer ADD PRIMARY KEY (sid);
+/*
+///////////////////////////////// 서브쿼리 ///////////////////////////////////////
+	WHERE 절 서브쿼리
+	FROM 절 서브쿼리
+	SELECT 절 서브쿼리
+*/
+
+/*
+	FROM 절 서브쿼리
+	EX) 선택과목 B 테이블에서 'MATH'를 선택한학생들의 이름을 찾아, 학생 A테이블에서 모든 정보를 조회하는 쿼리
+*/
+SELECT *
+FROM student A
+WHERE A.student_name IN (SELECT B.student_name
+							FROM subject B
+							WHERE B.subject_name ='MATH');
+							
+/*
+	FROM 절 서브쿼리
+	EX) 공급한 물품(item_name)과 총수량(total_amt)을 알고 싶은데, 
+	두 정보가 서로 다른 테이블에 들어있는 경우, 공급자(suppliers)와 주문(oreders) 
+	두 테이블로부터 각각 원하는 데이터를 불러와 출력하는 쿼리
+*/
+	SELECT A.item_name, subquery1.total_amt '공급한 물품, 총수량'
+	FROM suppliers A,
+		(SELECT supplier_id, SUM(B.amount) as total_amt
+			FROM orders B
+			GROUP BY supplier_id) subquery1 'orders B 테이블에서 supplier_id,amount 로 부터'   
+	WHERE subquery1.supplier_id =A.supplier_id;
+/*	
+	SELECT 절 서브쿼리 = 스칼라서브쿼리
+	SELECT 절에 오는 서브쿠리는 반드시 단일 값을 리턴해야한다. sum,count,min,max 등과 같은 집계 함수가 많이 쓰임
+	
+*/
+	SELECT product_name, list_price,
+		ROUND(
+			(SELECT AVG(list_price)
+			FROM product p1
+			WHERE p1.category_id = p2.category_id) , 2) avg_list_price
+	FROM products p2
+	ORDER BY product_name;
+
+
+/*
+	WHERE 절 서브쿼리
+	EX) 
+*/
+
+/*
+///////////////////////////////// JOIN ///////////////////////////////////////
+	INNER JOIN
+	OUTER JOIN
+	CROSS JOIN
+	SELF JOIN
+*/
+
+/* 
+	INNER JOIN
+	: JOIN이라고 하면 INNER JOIN 이다.
+	SELECT <열 목록>
+	FROM 첫 번째 테이블
+		INNER JOIN 두 번째 테이블
+		ON 조인될 조건
+	WHERE 검색조건
+*/
+/*BUYTABLE에서 KJD라는 아이디를 가진 사람이 구매한 물건을 배송하기 위해서 두개으 테이블을 통째로 조인하려면..*/
+SELECT B.ID, NAME, GOODNAME, ADDR, MOBILE +N
+FROM BUYTABLE A
+	INNER JOIN USERTABLE B
+	ON A.ID = B.ID
+WHERE A.ID ='KJD'
+
+
+/* DINTINCT */
+/*한 번이라도 물건을 구매한 VIP 고객 정보만 추출해 보기 == 겹치는 아이디를 전부 출력하는게 아니라 중복은 한번만*/
+SELECT DISTINCT U.ID,NAME,ADDR
+FROM USERTABLE U 
+	INNER JOIN BUYTABLE B
+	ON U.ID = B.ID
+	
+
+/*세 개 이상의 테이블 조인*/
+/*1번테이블*/
+CREATE TABLE StudentTable
+{
+	Name NVARCHAR(5) NOT NULL, PRIMARY KEY,
+	Addr NVARCHAR(5) NOT NULL,
+}
+/*2번테이블*/
+CREATE TABLE ClubTable
+{
+	Name NVARCHAR(5) NOT NULL PRIMARY KEY,
+	Roomno INT NOT NULL
+}
+/*3번테이블*/
+CREATE TABLE StdClubTable
+{
+	ID INT IDENTIFIED PRIMARY KEY
+	StdNAME NVARCHAR(5) NOT NULL FOREIGN KEY REFERENCES StudentTable(NAME) 
+	ClubName NVARCHAR(5) NOT NULL FOREIGN KEY REFERENCES ClubTable(Name)
+}
+
+/*3중 JOIN */
+SELECT S.NAME,ADDR,C.NAME,ROOMNO
+FROM StudentTable S 
+	INNER JOIN StdClubTable SC
+	ON S.NAME = SC.StdNAME
+		INNER JOIN ClubTable C
+		ON SC.ClubName = C.NAME;
+		
+		
+
+/*OUTER JOIN*/
+/*LEFT OUTER JOIN*/
+SELECT A.NAME, B.AGE
+FROM EX_TABLE A
+	LEFT OUTER JOIN JOIN_TABLE B
+	ON A.NO_EMP = B.NO_EMP
+	AND A.DEPT = B.DEPT 
+
+/*REIGT OUTER JOIN*/
+SELECT A.NAME, B.AGE
+FROM EX_TABLE A
+	RIGHT OUTER JOIN JOIN_TABLE B
+	ON A.NO_EMP = B.NO_EMP
+	AND A.DEPT = B.DEPT 
+
+
+/*CROSS JOIN : 모든 경우의 수를 전부 표현 3X4=12*/
+SELECT A.NAME, B.AGE
+FROM EX_TABLE A, JOIN_TABLE B
+
+
+/*SELF JOIN : 자기 자신과 조인 3X3 = 9*/
+SELECT A.NAME, B.AGE
+FROM EX_TABLE A, EX_TABE B;
+

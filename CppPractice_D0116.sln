@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppPractice_D0116", "CppPractice_D0116\CppPractice_D0116.vcproj", "{99CEACBB-40DD-4D65-B7B5-A614FB10AAFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99CEACBB-40DD-4D65-B7B5-A614FB10AAFD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99CEACBB-40DD-4D65-B7B5-A614FB10AAFD}.Debug|Win32.Build.0 = Debug|Win32
+		{99CEACBB-40DD-4D65-B7B5-A614FB10AAFD}.Release|Win32.ActiveCfg = Release|Win32
+		{99CEACBB-40DD-4D65-B7B5-A614FB10AAFD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
