@@ -24,7 +24,7 @@ void input()
 	}
 }
 
-void pro(int ct, int i)
+void pro(int ct, int num)
 {
 	if (ct == n / 2)
 	{
@@ -33,23 +33,11 @@ void pro(int ct, int i)
 		{
 			if (!vi[w])
 				nv.push_back(w);
-		}
-
-		int a = 0, b = 0;
-		for (int w = 0; w < v.size() - 1; w++)
-		{
-			for (int q = w + 1; q < v.size(); q++)
-			{
-				a += map[v[w]][v[q]] + map[v[q]][v[w]];
-				b += map[nv[w]][nv[q]] + map[nv[q]][nv[w]];
-			}
-		}
-		int S = abs(a - b);
-		ans = min(ans, S);
+		} 
 		return;
 	}
 
-	for (int w = i; w < n; w++)
+	for (int w = num; w < n; w++)
 	{
 		if (!vi[w])
 		{

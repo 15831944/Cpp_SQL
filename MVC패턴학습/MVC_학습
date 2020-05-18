@@ -1,0 +1,30 @@
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////*MVC_패턴*////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+//모든 동작은 Controller.h에서 작동한다.Not Main
+MVC.cpp(main)
+	Controller* insController = new Controller(); 
+	insController->Start();
+Controller.h 
+	(ㄱ)void Start()
+		View* insView =new View(); //View 동적할당
+		Model* insModel= new Model(); //Model 동적할당
+		/*
+			View를 이용해서 값을 받고 뿌린다. -->화면에 무엇인가를 보보여주기위한 역할
+			Controller를 이용해서 값을 컨트롤한다.-->View와 Model를 연결한다. "어떻게"
+			Model 값을 셋팅_저장(Get,Set)한다. --> DB느낌 "무엇"
+		*/
+		insView->ShowInputData(insModel->GetData()); / 
+		void DataProcessing(char* sData) 
+		insView->ShowMessage(insModel->GetData());
+		
+View.h
+	void ShowMessage(char *sMessage) //printf
+	void ShowInputData(char* sReturn ) //scanf
+
+
+Model.h
+	char* GetData()
+	void SetData(char* sData)
+	
+	
