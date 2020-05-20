@@ -329,3 +329,35 @@ FROM EX_TABLE A, JOIN_TABLE B
 SELECT A.NAME, B.AGE
 FROM EX_TABLE A, EX_TABE B;
 
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////// 듀토리얼 연습 ////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+/*INNER JOIN 2번에 CASE 쓴 경우*/
+SELECT A.CustomerID ,COUNT(B.CustomerID) as 갯수,B.OrderID ,COUNT(B.OrderID)as 주문갯수 ,CASE WHEN COUNT(B.OrderID) >=2 THEN '2이상' ELSE '2이하' END as 케이스
+FROM Customers A Inner join Orders B
+on A.CustomerID = B.CustomerID INNER JOIN OrderDetails C
+on B.OrderID = C.OrderID  
+GROUP BY A.CustomerID, B.OrderID
+HAVING B.OrderID < 100000
+ORDER BY A.CustomerID , B.OrderID
+
+/*SELECT 절에 SELECT 이중 으로 쓴 경우 */
+SELECT CustomerID , (
+				SELECT COUNT(CustomerID)
+                FROM ORDERS x
+                WHERE p.CustomerID=x.CustomerID) as 커스터머랑오더의ID같은경우
+FROM Customers p         
+
+/*FROM 절에 쓴 경우*/
+SELECT *
+FROM Orders p, ( 
+				SELECT CustomerID,EmployeeID,OrderDate
+                FROM Orders 
+                WHERE CustomerID= 2) x
+Where p.CustomerID = x.CustomerID              
+                     
+
+
