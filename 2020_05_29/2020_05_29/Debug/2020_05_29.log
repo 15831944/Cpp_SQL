@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\mnsoft\documents\visual studio 2015\projects\2020_05_29\2020_05_29\source.cpp(52): warning C4018: '<': signed/unsigned mismatch
+c:\users\mnsoft\documents\visual studio 2015\projects\2020_05_29\2020_05_29\source.cpp(73): warning C4018: '<': signed/unsigned mismatch
+  LINK : C:\Users\mnsoft\Documents\Visual Studio 2015\Projects\2020_05_29\Debug\2020_05_29.exe not found or not built by the last incremental link; performing full link
+  2020_05_29.vcxproj -> C:\Users\mnsoft\Documents\Visual Studio 2015\Projects\2020_05_29\Debug\2020_05_29.exe
+  2020_05_29.vcxproj -> C:\Users\mnsoft\Documents\Visual Studio 2015\Projects\2020_05_29\Debug\2020_05_29.pdb (Full PDB)
