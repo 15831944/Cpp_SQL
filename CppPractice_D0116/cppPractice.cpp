@@ -7,6 +7,7 @@
 #include <vector>
 #include <functional>
 #include <cmath>
+#include <queue>
 
 #include "Header11.h"
 //#include "add.h"
@@ -325,7 +326,65 @@ int Header112::width()
 int main ()
 {  
 
- 
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////this (자기자신)/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+cout << "/////////////////////////////////////////////////////////////////////////// " << endl;
+cout << "///////////////////////////////////NextPermutation///////////////////////// " << endl;
+cout << "/////////////////////////////////////////////////////////////////////////// " << endl;
+
+vector <int> Next;
+for (int i = 0; i < 3; i++) Next.push_back(i);
+do 
+{
+	for (int i = 0; i < 3; i++)
+	{
+		cout << Next[i];
+
+	}
+	cout << endl;
+} while (next_permutation(Next.begin(), Next.end()));
+
+
+cout << "/////////////////////////////////////////////////////////////////////////// " << endl;
+cout << "///////////////////////////////////NextPermutation///////////////////////// " << endl;
+cout << "//////////////////////////////////Combination////////////////////////////// " << endl;
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////넥퍼뮤 순열//////////////////////////////////////////
+/////////////////////////////////////넥퍼뮤 이용 조합 구하기///////////////////////////////////
+/*
+	길이가 7인 배열에서 길이가 6인 수열을 구한은 프로그램
+	순열은 뽑는 방법이므로 순서가 중요하지 않다. 7C6 이므로 7가지 ==> 조합 
+*/
+int arrCombination[7] = { 1,2,3,4,5,6,7 };
+bool tmpCombination[7] = { 0,0,0,0,0,0,1 }; // pick->'0', pass->'1' 
+
+do
+{
+	for (int i = 0; i < 7; i++)
+	{
+		if (tmpCombination[i] == 0)
+		{
+			cout << arrCombination[i] << " ";
+		}
+	}
+	cout << endl;
+} while (next_permutation(tmpCombination, tmpCombination + 7));
+/*순열 7!*/
+int cntPermutation;
+do
+{
+	//cntPermutation++;
+	for (int i = 0; i < 7; i++)
+	{
+		 cout << arrCombination[i] << " "; 
+	
+	}
+	cout << endl;
+} while (next_permutation(arrCombination, arrCombination +7 ));
+//cout <<" NUM :" <<cntPermutation << endl;
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////this (자기자신)/////////////////////////////////////
@@ -449,32 +508,25 @@ Permutition(0,0);
 	/*
 		Vector 예제
 	*/
-
+	cout << "/////////////////////////////////////// " << endl;
+	cout << "///////////////VECTOR EX/////////////// " << endl;
+	cout << "/////////////////////////////////////// " << endl;
 	//Vector Pair 관련
 	vector<pair<int,int>> pair2;
 	vector<pair<int,pair<int,int>>> pair3;
-	/*
-		pair2.push_back({1,2};
-		pair3.push_back({1},{2,3});
-
-		cout<< pair[0].first.first;
-		cout<< pair[0].first.second;
-
-
-		cout << pair3[0].second.first<< endl; -> 2
-		cout << pair3[0].second.second <<endl; -> 3
-		cout << pair3[0].first.first <<endl; ->1
-	*/
-
-	/*
+	queue<pair<int, string>> qpair;
+	pair2.push_back({ 1,2 });
+	qpair.push({ 1,"하이" });
+	
+	cout <<"about vector pair" <<pair2[0].first << endl;
+	cout <<"about vector pair" <<pair2[0].second << endl;
+	cout << "about queue pair" << qpair.front().first << endl;
+	cout << "about queue pair" << qpair.front().second << endl;
+	 /*
 		구조체를 벡터에 저장하는 예제
 		구조체 배열은 vv[0].english vv[1].korean 등으로 저장되는 형태
 		2차원 벡터랑은 조금 차이가있다.
-	*/
-
-	cout <<"/////////////////////////////////////// "  <<endl;
-	cout <<"///////////////VECTOR EX/////////////// "  <<endl;
-	cout <<"/////////////////////////////////////// "  <<endl;
+	*/ 
 	vector<Score> vv;
 	Score score1;
 	score1.korean = 123;
@@ -492,8 +544,9 @@ Permutition(0,0);
 	vector<Score> ss;
 	Score temmm;
 	//memset(ss,0,sizeof(ss));
-	//*memset(temmm,0,sizeof(temmm));*/
+	//memset(temmm,0,sizeof(temmm));
 	temmm.english =30 ;
+	temmm.korean = 20;
 	ss.push_back(temmm);
 	
 	/*
@@ -506,14 +559,14 @@ Permutition(0,0);
 
 	vec1.push_back(0); //vec1 = 0,1
 	vec1.push_back(1);
+
 	vec2.push_back(0); //vec2 = 0,1,2,3
 	vec2.push_back(1);
 	vec2.push_back(2);
 	vec2.push_back(3);
 
 	Vec2D.push_back(vec1);
-	Vec2D.push_back(vec2);	
-
+	Vec2D.push_back(vec2);
 	cout<< endl;
 	//출력
 	/*
@@ -529,13 +582,10 @@ Permutition(0,0);
 	{
 		for(int j = 0 ; j <Vec2D[i].size() ; j++)
 		{
-			cout<<"2D Vector : " <<Vec2D[i][j] <<  endl ;
-			 
+			cout<<"2D Vector[" << i << "]" << "[" << j << "]"  << " : " <<Vec2D[i][j] <<  endl ;
 		}
 			cout<<endl;
 	}
-	
-
 	/*
 		자료구조 Map
 		key, value를 가지는 자료구조

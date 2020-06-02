@@ -1,6 +1,8 @@
 ﻿  Source.cpp
-c:\users\mnsoft\documents\visual studio 2015\projects\촌수\촌수\source.cpp(73): warning C4018: '<': signed/unsigned mismatch
-c:\users\mnsoft\documents\visual studio 2015\projects\촌수\촌수\source.cpp(76): warning C4018: '<': signed/unsigned mismatch
-  LINK : c:\users\mnsoft\documents\visual studio 2015\Projects\촌수\Debug\촌수.exe not found or not built by the last incremental link; performing full link
-  촌수.vcxproj -> c:\users\mnsoft\documents\visual studio 2015\Projects\촌수\Debug\촌수.exe
-  촌수.vcxproj -> c:\users\mnsoft\documents\visual studio 2015\Projects\촌수\Debug\촌수.pdb (Full PDB)
+c:\users\mnsoft\desktop\cpppractice_d0116\cpp_sql\2020_06_01\촌수\촌수\source.cpp(82): warning C4018: '<': signed/unsigned mismatch
+c:\users\mnsoft\desktop\cpppractice_d0116\cpp_sql\2020_06_01\촌수\촌수\source.cpp(87): warning C4018: '<': signed/unsigned mismatch
+c:\users\mnsoft\desktop\cpppractice_d0116\cpp_sql\2020_06_01\촌수\촌수\source.cpp(108): warning C4018: '<': signed/unsigned mismatch
+c:\users\mnsoft\desktop\cpppractice_d0116\cpp_sql\2020_06_01\촌수\촌수\source.cpp(116): warning C4018: '<': signed/unsigned mismatch
+  LINK : C:\Users\mnsoft\Desktop\CppPractice_D0116\Cpp_SQL\2020_06_01\촌수\Debug\촌수.exe not found or not built by the last incremental link; performing full link
+  촌수.vcxproj -> C:\Users\mnsoft\Desktop\CppPractice_D0116\Cpp_SQL\2020_06_01\촌수\Debug\촌수.exe
+  촌수.vcxproj -> C:\Users\mnsoft\Desktop\CppPractice_D0116\Cpp_SQL\2020_06_01\촌수\Debug\촌수.pdb (Full PDB)
