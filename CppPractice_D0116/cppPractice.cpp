@@ -5,8 +5,8 @@
 #include <set>
 #include <algorithm>
 #include <vector>
-#include <functional>
-#include <cmath>
+//#include <functional>
+//#include <cmath>
 #include <queue>
 
 #include "Header11.h"
@@ -326,6 +326,102 @@ int Header112::width()
 int main ()
 {  
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////열거형 변수 enum/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+	enum Color
+	{
+		COLOR_BLACK, //assigned 0
+		COLOR_RED,   //assigned 1
+		COLOR_BLUE,  //assigned 2
+		COLOR_GREEN, //assigned 3
+		COLOR_WHITE, //assigned 4 
+	};// enum 자체는 세미콜론으로 끝나야함.
+
+	
+	//열거형 Color의 변수들 정의
+	Color paint = COLOR_WHITE;
+	Color house(COLOR_BLUE);
+	Color apple
+	{
+		COLOR_RED
+	}; 
+
+	enum Color2
+	{
+		RED,
+		BLUE,
+		GREEN
+	};
+
+	enum Feeling
+	{
+		HAPPY,
+		TIRED,
+		BLUE2  // error, BLUE is already used in enum Color2 in the global namespace ! 
+	};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////substr 예제/////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+	/*
+		https://www.naver.com
+		1)http:// 짜르고  0~4 
+		2)www.따르고 5~7 
+		3)naver. 짜르고 8 ~
+		4)com 짜르기 끝까지 
+	*/ 
+ 
+	string strURL = "https://www.naver.com";
+	string strRelut[4];
+	int end=0;
+	int arrNumx = 0;
+	int scnt = 0;
+	//아이디어  : w만나면 앞에까지 짤르기
+	for (int i = 0; i < strURL.size(); i++)
+	{
+		if (strURL[i] == '/')
+		{
+			scnt++;
+			if (scnt > 1)
+			{
+				strRelut[arrNumx++] = strURL.substr(0, i);
+				end = i + 2;
+				break; 
+			}else
+			{
+				continue;
+			
+			}
+			
+		}
+		if (strURL[i] == '.')
+		{
+			strRelut[arrNumx++] =strURL.substr(end , i);
+			end = i + 1;
+			break;
+		}
+		else
+		{
+			strRelut[arrNumx++] = strURL.substr(end, i);
+		}
+		
+
+	}
+	//.만나면 방금맨끝에서 그앞까지 짜르기
+	//너머지 처리하기
+	//1 0~6
+		
+	//2 7~ .까지
+	
+	//3 그담부터 .까지
+	
+	//4 그담부터 마지막까지 
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////this (자기자신)/////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -360,23 +456,44 @@ cout << "//////////////////////////////////Combination//////////////////////////
 int arrCombination[7] = { 1,2,3,4,5,6,7 };
 bool tmpCombination[7] = { 0,0,0,0,0,0,1 }; // pick->'0', pass->'1' 
 
+ 
+/*순열 ABC 순서대로 */
+
+vector <string> CC;
+CC.push_back("A");
+CC.push_back("B");
+CC.push_back("C");
 do
 {
-	for (int i = 0; i < 7; i++)
+	for (int i = 0; i < CC.size(); i++)
 	{
-		if (tmpCombination[i] == 0)
+		cout << CC[i] << " ";
+	}
+	cout << endl;
+
+} while (next_permutation(CC.begin(), CC.end()));
+
+
+//7C1 구현
+int temp0[7] = { 0,0,0,0,0,0,1 };
+do
+{
+	for (int i = 0; i < 2; i++)
+	{
+		if (temp0[i] == 0)
 		{
 			cout << arrCombination[i] << " ";
 		}
 	}
 	cout << endl;
-} while (next_permutation(tmpCombination, tmpCombination + 7));
-/*순열 7!*/
+} while (next_permutation(temp0, temp0 + 7));
+ 
+
 int cntPermutation;
 do
 {
 	//cntPermutation++;
-	for (int i = 0; i < 7; i++)
+	for (int i = 0; i < 2; i++)
 	{
 		 cout << arrCombination[i] << " "; 
 	
