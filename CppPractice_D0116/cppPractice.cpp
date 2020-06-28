@@ -739,7 +739,7 @@ Permutition(0,0);
 	m.insert(make_pair("d",4));
 	m.insert(make_pair("e",5));
 	m.insert(make_pair("e",5));
-
+	m.insert({ "e",5 });
 	map<int,int> :: iterator iter; 
 	map<int,int> mm;
 	mm[11]=200;  //key value »ğÀÔ

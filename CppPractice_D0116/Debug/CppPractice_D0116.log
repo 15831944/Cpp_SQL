@@ -10,5 +10,7 @@ c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\cpppractice_d0116\cpppra
 c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\cpppractice_d0116\cpppractice.cpp(718): warning C4018: '<': signed/unsigned mismatch
 c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\cpppractice_d0116\cpppractice.cpp(506): warning C4101: 'cntPermutation': unreferenced local variable
 c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\cpppractice_d0116\cpppractice.cpp(200): warning C4715: 'cmp': not all control paths return a value
+  LINK : C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\Debug\CppPractice_D0116.exe not found or not built by the last incremental link; performing full link
+cppPractice.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   CppPractice_D0116.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\Debug\CppPractice_D0116.exe
   CppPractice_D0116.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\Debug\CppPractice_D0116.pdb (Full PDB)
