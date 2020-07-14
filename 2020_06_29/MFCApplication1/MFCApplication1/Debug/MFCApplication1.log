@@ -1,0 +1,6 @@
+﻿  MFCApplication1Dlg.cpp
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\mfcapplication1\mfcapplication1\mfcapplication1dlg.cpp(161): error C2653: 'CUserClass': is not a class or namespace name
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\mfcapplication1\mfcapplication1\mfcapplication1dlg.cpp(162): error C2601: 'Save': local function definitions are illegal
+  c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\mfcapplication1\mfcapplication1\mfcapplication1dlg.cpp(160): note: this line contains a '{' which has not yet been matched
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\mfcapplication1\mfcapplication1\mfcapplication1dlg.cpp(164): error C2664: 'CFileDialog::CFileDialog(const CFileDialog &)': cannot convert argument 2 from 'const char [6]' to 'LPCTSTR'
+  c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\mfcapplication1\mfcapplication1\mfcapplication1dlg.cpp(164): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast

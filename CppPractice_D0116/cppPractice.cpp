@@ -245,13 +245,14 @@ void Permutition(int ctttt, int num )
 
 	for(int w= 0 ; w<5 ;w ++)
 	{
-		if(!vii[w])
-		{	vii[w]=true;
+		//if(!vii[w])
+		//{	
+		vii[w]=true;
 		vvvvv_.push_back(ex_Num[w]); //0	
 		Permutition(ctttt+1,w);
 		vvvvv_.pop_back(); 
 		vii[w] =false;
-		} 
+		//} 
 	}
 
 }
@@ -271,13 +272,14 @@ void Combination(int ctttt, int num )
 
 	for(int w= num ; w<5 ;w ++)
 	{
-		if(!vii[w])
-		{	vii[w]=true;
+		//if(!vii[w])
+		//{	
+		vii[w]=true;
 		vvvvv_.push_back(ex_Num[w]); //0	
 		Combination(ctttt+1,w);
 		vvvvv_.pop_back(); 
 		vii[w] =false;
-		} 
+		//} 
 	}
 
 }
@@ -387,16 +389,16 @@ int main ()
 		2)www.따르고 5~7 
 		3)naver. 짜르고 8 ~
 		4)com 짜르기 끝까지 
-	*/ 
- 
+	*/  
 	string strURL = "https://www.naver.com";
 	string strRelut[4];
 	int end=0;
 	int arrNumx = 0;
 	int scnt = 0;
 	//아이디어  : w만나면 앞에까지 짤르기
-	for (int i = 0; i < strURL.size(); i++)
+	/*for (int i = 0; i < strURL.size(); i++)
 	{
+		
 		if (strURL[i] == '/')
 		{
 			scnt++;
@@ -424,7 +426,7 @@ int main ()
 		}
 		
 
-	}
+	}*/
 	//.만나면 방금맨끝에서 그앞까지 짜르기
 	//너머지 처리하기
 	//1 0~6
@@ -489,10 +491,11 @@ do
 
 
 //7C1 구현
-int temp0[7] = { 0,0,0,0,0,0,1 };
+int temp0[7] = { 0,0,0,0,1,1,1 };
+cout << "%%%%%%%%%%%%7C1 Combination%%%%%%%%%%" << endl;
 do
 {
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < 7; i++)
 	{
 		if (temp0[i] == 0)
 		{
@@ -502,19 +505,7 @@ do
 	cout << endl;
 } while (next_permutation(temp0, temp0 + 7));
  
-
-int cntPermutation;
-do
-{
-	//cntPermutation++;
-	for (int i = 0; i < 2; i++)
-	{
-		 cout << arrCombination[i] << " "; 
-	
-	}
-	cout << endl;
-} while (next_permutation(arrCombination, arrCombination +7 ));
-//cout <<" NUM :" <<cntPermutation << endl;
+ 
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////
