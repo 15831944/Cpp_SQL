@@ -1,0 +1,114 @@
+﻿  Source.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): error C2665: 'std::pair<std::string,std::pair<int,int>>::pair': none of the 2 overloads could convert all the argument types
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\utility(113): note: could be 'std::pair<std::string,std::pair<int,int>>::pair(std::pair<std::string,std::pair<int,int>> &&)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\utility(112): note: or       'std::pair<std::string,std::pair<int,int>>::pair(const std::pair<std::string,std::pair<int,int>> &)'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): note: while trying to match the argument list '(std::pair<const _Kty,_Ty>)'
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>&>(_Objty *,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>> &)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Objty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>&>(_Objty *,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>> &)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Objty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(996): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>&>(std::allocator<_Ty> &,_Objty *,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>> &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::pair<std::string,std::pair<int,int>>>,
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string,
+              _Objty=std::pair<std::string,std::pair<int,int>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(995): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>&>(std::allocator<_Ty> &,_Objty *,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>> &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::pair<std::string,std::pair<int,int>>>,
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string,
+              _Objty=std::pair<std::string,std::pair<int,int>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(225): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>&>(_Ty *,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>> &)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(225): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>&>(_Ty *,std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>> &)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(251): note: see reference to function template instantiation '_FwdIt *std::_Uninitialized_copy_al_unchecked1<_InIt,_FwdIt,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,std::_Wrap_alloc<std::allocator<_Ty>> &,std::_General_ptr_iterator_tag,std::_Any_tag)' being compiled
+          with
+          [
+              _FwdIt=std::pair<std::string,std::pair<int,int>> *,
+              _InIt=std::_Tree_unchecked_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>,
+              _Ty=std::pair<std::string,std::pair<int,int>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory(264): note: see reference to function template instantiation '_FwdIt *std::_Uninitialized_copy_al_unchecked<std::_Tree_unchecked_iterator<_Mytree>,_Iter,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,std::_Wrap_alloc<std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              _FwdIt=std::pair<std::string,std::pair<int,int>> *,
+              _Mytree=std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>,
+              _Iter=std::pair<std::string,std::pair<int,int>> *,
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _InIt=std::_Tree_unchecked_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1653): note: see reference to function template instantiation '_FwdIt *std::_Uninitialized_copy<_Iter,std::pair<std::string,std::pair<int,int>>*,std::allocator<_Ty>>(_InIt,_InIt,_FwdIt,std::_Wrap_alloc<std::allocator<_Ty>> &)' being compiled
+          with
+          [
+              _FwdIt=std::pair<std::string,std::pair<int,int>> *,
+              _Iter=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>,
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _InIt=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1349): note: see reference to function template instantiation 'std::pair<std::string,std::pair<int,int>> *std::vector<std::pair<std::string,std::pair<int,int>>,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,std::pair<std::string,std::pair<int,int>> *)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Iter=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1349): note: see reference to function template instantiation 'std::pair<std::string,std::pair<int,int>> *std::vector<std::pair<std::string,std::pair<int,int>>,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,std::pair<std::string,std::pair<int,int>> *)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Iter=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1325): note: see reference to function template instantiation 'void std::vector<std::pair<std::string,std::pair<int,int>>,std::allocator<_Ty>>::_Assign<_Iter>(_Iter,_Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Iter=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1325): note: see reference to function template instantiation 'void std::vector<std::pair<std::string,std::pair<int,int>>,std::allocator<_Ty>>::_Assign<_Iter>(_Iter,_Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Iter=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]
+  c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_07_14\consoleapplication2\consoleapplication2\source.cpp(62): note: see reference to function template instantiation 'void std::vector<std::pair<std::string,std::pair<int,int>>,std::allocator<_Ty>>::assign<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>>(_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string,
+              _Iter=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]
+  c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_07_14\consoleapplication2\consoleapplication2\source.cpp(62): note: see reference to function template instantiation 'void std::vector<std::pair<std::string,std::pair<int,int>>,std::allocator<_Ty>>::assign<std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>>(_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=std::pair<std::string,std::pair<int,int>>,
+              _Kty=std::string,
+              _Iter=std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const std::string,std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>>>>>
+          ]

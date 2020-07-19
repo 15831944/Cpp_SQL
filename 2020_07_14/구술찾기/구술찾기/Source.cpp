@@ -1,3 +1,5 @@
+//SOL ธ๘วิ.
+
 #include <iostream>
 #include <cstring>
 #include <string>

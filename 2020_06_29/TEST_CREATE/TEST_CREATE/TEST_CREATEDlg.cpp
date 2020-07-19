@@ -158,12 +158,19 @@ void CTEST_CREATEDlg::OnPaint()
 HCURSOR CTEST_CREATEDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
-}
-
-
-
+} 
 void CTEST_CREATEDlg::OnBnClickedButton1()
-{/*
+{
+	
+	CString msg;
+	char *test_buf = "TEST HAHA";
+	wchar_t *test_buf2 = L"test wchar_t";
+	TCHAR *test_buf3 = L"TEST CHAR";
+
+	msg = test_buf;
+	msg.Format(_T("s"),test_buf);
+	
+	/*
 	//char szFilter[20]  ;
 	CString szFilter = _T("txt file(*.txt)|*.txt; |ALL File(*.*(|*.*||");
 	CFileDialog dlg(FALSE, _T(""), NULL, OFN_OVERWRITEPROMPT, szFilter);
@@ -185,8 +192,24 @@ void CTEST_CREATEDlg::OnBnClickedButton1()
 		int temp = strPath.ReverseFind('\\');
 		CString re = strPath.Mid(0, strPath.ReverseFind('\\'));
 		CString res = strPath.Mid(strPath.ReverseFind('\\')+1, strPath.GetLength());
-	}*/
-	
+	}*/ 
+	CString m_strPath, str;
+	CStdioFile rFile;
+	CFileException ex;
+	CString getFilestring = _T("");
+	CFileDialog dlg(TRUE, _T("*.txt"), NULL, OFN_FILEMUSTEXIST | OFN_OVERWRITEPROMPT, _T("TXT File(*.txt)|*.txt|"),NULL);
+	//CFileDialog dlg(TRUE, _T("*.mdb"), NULL, OFN_FILEMUSTEXIST | OFN_OVERWRITEPROMPT, _T("MDB File(*.mdb)|*.mdb|"), NULL);
+	if (dlg.DoModal() == IDOK)
+	{
+		m_strPath = dlg.GetPathName();
+		rFile.Open(m_strPath, CFile::modeReadWrite | CFile::typeText, &ex);
+		while (rFile.ReadString(str))
+		{
+			getFilestring = (str + _T("\r\n"));
+		}
+		rFile.Close();
+	} 
+	/*
 
 	//ini 파일 쓰기
 	CString pah;
@@ -222,17 +245,17 @@ void CTEST_CREATEDlg::OnBnClickedButton1()
 		}
 	}
 
+	*/
 
-
-	char *cBuf = NULL; 
-	CString* dd[256] ;
+	//char *cBuf = NULL; 
+	//CString* dd[256] ;
  
 
-	cBuf = (char *)malloc(sizeof(char) * 256); 
-	memset(cBuf, 0x00, sizeof(cBuf));
+	//cBuf = (char *)malloc(sizeof(char) * 256); 
+	//memset(cBuf, 0x00, sizeof(cBuf));
 
 
-	pah.Format(_T("C:\\Users\\mnsoft\\Desktop\\temp3\\test.ini"));
+	//path.Format(_T("C:\\Users\\mnsoft\\Desktop\\temp3\\test.ini"));
 
 	//WritePrivateProfileString(_T("Section_1"), _T("key_1"), _T("True"), pah);
 	//WritePrivateProfileString(_T("Section_2"), _T("key_1"), _T("True"), pah);
@@ -267,9 +290,7 @@ BOOL CTEST_CREATEDlg::PreTranslateMessage(MSG* pMsg)
 		if (GetDlgItem(IDC_BUTTON1) == GetFocus())
 		{
 			OnBnClickedButton1();
-			//		 return TRUE;
-
-
+			//		 return TRUE; 
 		}
 
 	}

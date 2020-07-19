@@ -1,9 +1,7 @@
 ﻿  TEST_CREATEDlg.cpp
 c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\test_create\test_create\test_createdlg.h(8): warning C4005: '_MAX_PATH': macro redefinition
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1047): note: see previous definition of '_MAX_PATH'
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\test_create\test_create\test_createdlg.cpp(253): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\test_create\test_create\test_createdlg.cpp(194): warning C4101: 'buff': unreferenced local variable
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\test_create\test_create\test_createdlg.cpp(228): warning C4101: 'dd': unreferenced local variable
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\test_create\test_create\test_createdlg.cpp(195): warning C4101: 'sDIr': unreferenced local variable
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_06_29\test_create\test_create\test_createdlg.cpp(276): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
+  LINK : C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_06_29\TEST_CREATE\Debug\TEST_CREATE.exe not found or not built by the last incremental link; performing full link
   TEST_CREATE.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_06_29\TEST_CREATE\Debug\TEST_CREATE.exe
   TEST_CREATE.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_06_29\TEST_CREATE\Debug\TEST_CREATE.pdb (Partial PDB)
