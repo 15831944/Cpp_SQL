@@ -4,10 +4,12 @@
 #include <algorithm>
 using namespace std;
 bool visit[50] = { false,  };
-int in = -1;
+int in = 0;
 void dfs(string begin, vector<string> words, int num,string target)
 { 
-	if (target== begin)
+	if (begin== target)
+		return;
+	if (num >= words.size())
 		return;
 	else if (num >= words.size()&& target!=begin)
 	{
@@ -29,18 +31,24 @@ void dfs(string begin, vector<string> words, int num,string target)
 		//}
 	}
 	//«—∞≥ πŸ≤Ò
-	if (cnt == 2 && visit[num]==false){
+	 
+	if (cnt == 2 && visit[num]==false)
+	{
 		visit[num] = true;
+		string tempstr = begin;
 		begin = words[num];
 		in++;
 		dfs(begin, words, 0,target);
 		visit[num] = false;
+		//begin¿ª πŸ≤„¡‡æﬂ«ÿ 
+		dfs(tempstr, words, num + 1, target);
+		//dfs(begin, words, num + 1, target);
 	}
 	else
 	{
+		//visit[num] = false;
+		
 		dfs(begin, words, num + 1, target);
-		visit[num] = false;
-		//dfs(begin, words, num + 1, target);
 	}
 		
 	
