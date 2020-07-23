@@ -73,7 +73,10 @@ vector<int> solution(vector<string> words, vector<string> queries) {
 
 		//정상적으로 root에 words 넣기
 		const char *c = a.c_str();
-		if (root[size] == NULL) root[size] = new Trie();
+		if (root[size] == NULL)
+		{
+			root[size] = new Trie();
+		}
 		root[size]->insert(c);
 
 
@@ -81,7 +84,10 @@ vector<int> solution(vector<string> words, vector<string> queries) {
 		reverse(reversed_string.begin(), reversed_string.end());
 
 		const char *k = reversed_string.c_str();
-		if (reroot[size] == NULL) reroot[size] = new Trie();
+		if (reroot[size] == NULL) 
+		{ 
+			reroot[size] = new Trie(); 
+		}
 		reroot[size]->insert(k);
 
 	}
@@ -92,7 +98,8 @@ vector<int> solution(vector<string> words, vector<string> queries) {
 
 		int size = a.size();
 
-		if (a[size - 1] == '?') {
+		if (a[size - 1] == '?') 
+		{
 			const char *c = a.c_str();
 
 			if (root[size] == NULL) 
