@@ -1,3 +1,5 @@
 ﻿  Source.cpp
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_07_22\보석쇼핑\보석쇼핑\source.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_07_22\보석쇼핑\보석쇼핑\source.cpp(47): warning C4018: '>': signed/unsigned mismatch
   보석쇼핑.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_07_22\보석쇼핑\Debug\보석쇼핑.exe
   보석쇼핑.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_07_22\보석쇼핑\Debug\보석쇼핑.pdb (Full PDB)
