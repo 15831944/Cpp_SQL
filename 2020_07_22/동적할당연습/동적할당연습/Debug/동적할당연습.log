@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\2020_07_22\동적할당연습\동적할당연습\source.cpp(78): warning C4101: 'p': unreferenced local variable
+  LINK : C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_07_22\동적할당연습\Debug\동적할당연습.exe not found or not built by the last incremental link; performing full link
+  동적할당연습.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_07_22\동적할당연습\Debug\동적할당연습.exe
+  동적할당연습.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\2020_07_22\동적할당연습\Debug\동적할당연습.pdb (Full PDB)
