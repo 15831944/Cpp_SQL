@@ -32,11 +32,11 @@ int bfs(string begin, vector<string> words, int num, string target)
 					cnt++;
 				}
 			} 
-			if (cnt == 2 && !visit[w])
+			if (cnt == begin.size()-1 && !visit[w])
 			{
 				if (words[w] == target)
 				{
-					flag = true;
+					flag = true; 
 					answer = ansNum;
 					break;
 				}
@@ -68,9 +68,9 @@ int solution(string begin, string target, vector<string> words)
 
 int main()
 {
-	//cout << solution("hit", "cog", { "hot", "dot", "dog", "lot", "log","cog" }) << endl;// hot -> dot -> dog -> log -> cog 
+	cout << solution("hit", "cog", { "hot", "dot", "dog", "lot", "log","cog" }) << endl;// hot -> dot -> dog -> log -> cog 
  	//cout << solution("hit", "hhh", { "hhh", "hht" }) << endl; //2
-	//cout << solution("hit", "zzz", { "aaa" }) << endl;
+	//cout << solution("zzz", "zzz", { "zzz" }) << endl;
 	//cout << solution("hit", "zzz", { "zzz" }) << endl;
 	//cout << solution("hit", "zzz", { "zzz", "zyz", "xzz", "xyz", "hyt", "hyz", "xiz", "hiz" }) << endl;// 4 :  hyt -> xiz -> xzz -> zzz //4¹ø
 

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\브루트포스">
+      <UniqueIdentifier>{1c39e664-ded2-4c78-bd5a-c6d730524586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\위상정렬">
+      <UniqueIdentifier>{8dee4d3c-6db3-41bc-8102-a04dadf678cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DP">
+      <UniqueIdentifier>{74d62cd4-85b3-4f96-9690-4fb2e150e366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\KakaoCt">
+      <UniqueIdentifier>{9891c640-969b-465a-8a91-bc5394293a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{f8c33c2f-4a02-46e2-97bf-3758acaea948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\이분탐색">
+      <UniqueIdentifier>{46abba85-03df-4840-94d4-9c720386a123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\시뮬레이션">
+      <UniqueIdentifier>{b8615a75-86b0-4d02-97fa-6b6e67444f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DFS">
+      <UniqueIdentifier>{13e0cd84-b1eb-48a6-b906-7ad56127fda2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\네이버">
+      <UniqueIdentifier>{364b6f31-8afd-413a-9be7-f6fbf9cc5e92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="백준7568_덩치.cpp">
+      <Filter>Source Files\브루트포스</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준3665_최종순위.cpp">
+      <Filter>Source Files\위상정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_위상정렬.cpp">
+      <Filter>Source Files\위상정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="Test1_민석SOL.cpp">
+      <Filter>Source Files\KakaoCt</Filter>
+    </ClCompile>
+    <ClCompile Include="Test1_승봉Sol.cpp">
+      <Filter>Source Files\KakaoCt</Filter>
+    </ClCompile>
+    <ClCompile Include="Test3_민석Sol.cpp">
+      <Filter>Source Files\KakaoCt</Filter>
+    </ClCompile>
+    <ClCompile Include="Test3_승봉Sol.cpp">
+      <Filter>Source Files\KakaoCt</Filter>
+    </ClCompile>
+    <ClCompile Include="백준2798_블랙잭.cpp">
+      <Filter>Source Files\브루트포스</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_연속자연수합(단순수리).cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="42_이분탐색.cpp">
+      <Filter>Source Files\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="P_블량사용자.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P_[1차] 캐시.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="P_불량사용자_민석.cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_뮤직비디오(이분검색).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1.cpp">
+      <Filter>Source Files\네이버</Filter>
+    </ClCompile>
+    <ClCompile Include="2.cpp">
+      <Filter>Source Files\네이버</Filter>
+    </ClCompile>
+    <ClCompile Include="3.cpp">
+      <Filter>Source Files\네이버</Filter>
+    </ClCompile>
+    <ClCompile Include="temp.cpp">
+      <Filter>Source Files\네이버</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="강의_가방문제_냅색알고리즘.cpp">
+      <Filter>Source Files\DP</Filter>
+    </None>
+  </ItemGroup>
+</Project>

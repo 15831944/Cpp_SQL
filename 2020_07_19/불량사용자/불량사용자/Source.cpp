@@ -9,25 +9,29 @@ vector<int> v[10];
  
 set<string> s;
 
-void dfs(int idx, int N) 
+void  dfs(int num, int N) 
 {
-	if (idx == N) 
+	if (num == N) 
 	{
-		string tmp = "";
+		string tmepStr = "";
 		for (int i = 0; i < 10; i++)
-			if (visit[i] == 1) tmp += to_string(i);
-		s.insert(tmp);
+			if (visit[i] == 1)
+			{
+				tmepStr += to_string(i);
+			}
+		s.insert(tmepStr);
 		return;
 	}
 
-	for (int j = 0; j < v[idx].size(); j++) 
+	for (int j = 0; j < v[num].size(); j++) 
 	{
-		int cur = v[idx][j];
+		int cur = v[num][j];
 		if (visit[cur] == 1) continue;
 		visit[cur] = 1;
-		dfs(idx + 1, N);
+		dfs(num + 1, N);
 		visit[cur] = 0;
 	}
+ 
 } 
 
 int solution(vector<string> user_id, vector<string> banned_id)
@@ -66,8 +70,8 @@ int solution(vector<string> user_id, vector<string> banned_id)
 			}
 		}
 	}
-	dfs(0, banned_id.size());
-
+	 dfs(0, banned_id.size());
+	 answer = s.size();
 	return answer;
 }
 int main()
