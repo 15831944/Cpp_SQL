@@ -100,6 +100,12 @@
       <Filter>Source Files\이분탐색</Filter>
     </ClCompile>
     <ClCompile Include="P_GPS.cpp">
+      <Filter>Source Files\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="P_기지국설치.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="P_리틀프렌즈사천성.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
