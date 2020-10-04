@@ -111,6 +111,42 @@
     <ClCompile Include="SAMSUNG_줄기세포배양.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="강의_60_합이같은부분집합_아마존인터뷰.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_61_특정수만들기MS인터뷰문제_DFS완전탐색.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_63.인접행렬(가중치 노드연결).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_67. 최소 비용 (그래프 DFS).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_68_최소 비용 가중치 방향그래프 인접 리스트vector STL pair 자료구조.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_70그래프 최단거리 BFS_Breadth First Search2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_71송아지 찾기 BFS  상태트리탐색.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_75최대 수입 스케쥴priority queue greedy 구조체와 Vector를 이용한 정렬.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_76_이항계수(메모이제이션).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_77친구인가Disjoint_set_Union_Find 알고리즘.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_78원더랜드  Kruskal MST 최소스패닝트리알고리즘 Union_Find 활용.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_79원더랜드  Kruskal MST 최소스패닝트리알고리즘 priority_queue 활용.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="강의_가방문제_냅색알고리즘.cpp">
