@@ -147,6 +147,15 @@
     <ClCompile Include="강의_79원더랜드  Kruskal MST 최소스패닝트리알고리즘 priority_queue 활용.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="강의_80_다익스트라 알고리즘.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_81_벨만-포드 알고리즘.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_82_순열구하기(DFS  Depth First Search).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="강의_가방문제_냅색알고리즘.cpp">
