@@ -40,6 +40,12 @@
     <Filter Include="Source Files\위상정렬">
       <UniqueIdentifier>{8dee4d3c-6db3-41bc-8102-a04dadf678cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\알고리즘">
+      <UniqueIdentifier>{cf44288c-703f-43f7-a324-f4846aac8646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BFS">
+      <UniqueIdentifier>{6621e6f1-3b8f-4dc5-a13f-c48e31f7d1e1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="백준7568_덩치.cpp">
@@ -105,56 +111,68 @@
     <ClCompile Include="P_기지국설치.cpp">
       <Filter>Source Files\Math</Filter>
     </ClCompile>
-    <ClCompile Include="P_리틀프렌즈사천성.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SAMSUNG_줄기세포배양.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="강의_60_합이같은부분집합_아마존인터뷰.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_61_특정수만들기MS인터뷰문제_DFS완전탐색.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_63.인접행렬(가중치 노드연결).cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_67. 최소 비용 (그래프 DFS).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="강의_68_최소 비용 가중치 방향그래프 인접 리스트vector STL pair 자료구조.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="강의_70그래프 최단거리 BFS_Breadth First Search2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_71송아지 찾기 BFS  상태트리탐색.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_75최대 수입 스케쥴priority queue greedy 구조체와 Vector를 이용한 정렬.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_76_이항계수(메모이제이션).cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_77친구인가Disjoint_set_Union_Find 알고리즘.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_78원더랜드  Kruskal MST 최소스패닝트리알고리즘 Union_Find 활용.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_79원더랜드  Kruskal MST 최소스패닝트리알고리즘 priority_queue 활용.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_80_다익스트라 알고리즘.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_81_벨만-포드 알고리즘.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="강의_86 피자 배달 거리(삼성 SW역량평가 기출문제  DFS활용.cpp">
+      <Filter>Source Files\DFS</Filter>
     </ClCompile>
     <ClCompile Include="강의_82_순열구하기(DFS  Depth First Search).cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_85 수식만들기%28삼성 SW역량평가 기출문제  DFS활용%29.cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_84 휴가(삼성 SW역량평가 기출문제 DFS활용).cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_85_1_조합(Combination).cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_81_벨만-포드 알고리즘.cpp">
+      <Filter>Source Files\알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_77친구인가Disjoint_set_Union_Find 알고리즘.cpp">
+      <Filter>Source Files\알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_78원더랜드  Kruskal MST 최소스패닝트리알고리즘 Union_Find 활용.cpp">
+      <Filter>Source Files\알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_79원더랜드  Kruskal MST 최소스패닝트리알고리즘 priority_queue 활용.cpp">
+      <Filter>Source Files\알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_80_다익스트라 알고리즘.cpp">
+      <Filter>Source Files\알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_76_이항계수(메모이제이션).cpp">
+      <Filter>Source Files\알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_75최대 수입 스케쥴priority queue greedy 구조체와 Vector를 이용한 정렬.cpp">
+      <Filter>Source Files\알고리즘</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_71송아지 찾기 BFS  상태트리탐색.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_70그래프 최단거리 BFS_Breadth First Search2.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="SAMSUNG_줄기세포배양.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="P_리틀프렌즈사천성.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_61_특정수만들기MS인터뷰문제_DFS완전탐색.cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_63.인접행렬(가중치 노드연결).cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_67. 최소 비용 (그래프 DFS).cpp">
+      <Filter>Source Files\DFS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

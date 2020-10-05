@@ -1,3 +1,5 @@
-﻿  강의_82_순열구하기(DFS  Depth First Search).cpp
+﻿  강의_86 피자 배달 거리(삼성 SW역량평가 기출문제  DFS활용.cpp
+c:\users\pc\desktop\coding\20_하반기코테대비\20_하반기코테대비\강의_86 피자 배달 거리(삼성 sw역량평가 기출문제  dfs활용.cpp(28): warning C4018: '<': signed/unsigned mismatch
+c:\users\pc\desktop\coding\20_하반기코테대비\20_하반기코테대비\강의_86 피자 배달 거리(삼성 sw역량평가 기출문제  dfs활용.cpp(50): warning C4018: '<': signed/unsigned mismatch
   20_하반기코테대비.vcxproj -> C:\Users\PC\Desktop\Coding\20_하반기코테대비\Debug\20_하반기코테대비.exe
   20_하반기코테대비.vcxproj -> C:\Users\PC\Desktop\Coding\20_하반기코테대비\Debug\20_하반기코테대비.pdb (Full PDB)
