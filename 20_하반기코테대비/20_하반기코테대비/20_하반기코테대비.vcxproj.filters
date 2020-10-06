@@ -78,9 +78,6 @@
     <ClCompile Include="강의_연속자연수합(단순수리).cpp">
       <Filter>Source Files\Math</Filter>
     </ClCompile>
-    <ClCompile Include="42_이분탐색.cpp">
-      <Filter>Source Files\이분탐색</Filter>
-    </ClCompile>
     <ClCompile Include="P_[1차] 캐시.cpp">
       <Filter>Source Files\시뮬레이션</Filter>
     </ClCompile>
@@ -173,6 +170,15 @@
     </ClCompile>
     <ClCompile Include="강의_67. 최소 비용 (그래프 DFS).cpp">
       <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_42_이분탐색.cpp">
+      <Filter>Source Files\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="백준2110_공유기설치[dfs].cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2110_공유기설치[이분탐색SOL].cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
