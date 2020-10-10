@@ -46,6 +46,9 @@
     <Filter Include="Source Files\BFS">
       <UniqueIdentifier>{6621e6f1-3b8f-4dc5-a13f-c48e31f7d1e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\쿠팡CT">
+      <UniqueIdentifier>{ef62b607-89f4-480f-86ea-a6ed64780132}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="백준7568_덩치.cpp">
@@ -179,6 +182,24 @@
     </ClCompile>
     <ClCompile Include="백준_2110_공유기설치[이분탐색SOL].cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1번.cpp">
+      <Filter>Source Files\쿠팡CT</Filter>
+    </ClCompile>
+    <ClCompile Include="3번.cpp">
+      <Filter>Source Files\쿠팡CT</Filter>
+    </ClCompile>
+    <ClCompile Include="4번.cpp">
+      <Filter>Source Files\쿠팡CT</Filter>
+    </ClCompile>
+    <ClCompile Include="111.cpp">
+      <Filter>Source Files\쿠팡CT</Filter>
+    </ClCompile>
+    <ClCompile Include="222.cpp">
+      <Filter>Source Files\쿠팡CT</Filter>
+    </ClCompile>
+    <ClCompile Include="222222.cpp">
+      <Filter>Source Files\쿠팡CT</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

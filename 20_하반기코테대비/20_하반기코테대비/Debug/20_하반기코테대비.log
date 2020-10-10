@@ -1,2 +1,8 @@
-﻿  20_하반기코테대비.vcxproj -> C:\Users\PC\Desktop\Coding\20_하반기코테대비\Debug\20_하반기코테대비.exe
+﻿  222.cpp
+c:\users\pc\desktop\coding\20_하반기코테대비\20_하반기코테대비\222.cpp(16): warning C4018: '<=': signed/unsigned mismatch
+c:\users\pc\desktop\coding\20_하반기코테대비\20_하반기코테대비\222.cpp(20): warning C4018: '<': signed/unsigned mismatch
+c:\users\pc\desktop\coding\20_하반기코테대비\20_하반기코테대비\222.cpp(26): warning C4018: '<': signed/unsigned mismatch
+c:\users\pc\desktop\coding\20_하반기코테대비\20_하반기코테대비\222.cpp(29): warning C4018: '<': signed/unsigned mismatch
+c:\users\pc\desktop\coding\20_하반기코테대비\20_하반기코테대비\222.cpp(38): warning C4018: '<': signed/unsigned mismatch
+  20_하반기코테대비.vcxproj -> C:\Users\PC\Desktop\Coding\20_하반기코테대비\Debug\20_하반기코테대비.exe
   20_하반기코테대비.vcxproj -> C:\Users\PC\Desktop\Coding\20_하반기코테대비\Debug\20_하반기코테대비.pdb (Full PDB)
