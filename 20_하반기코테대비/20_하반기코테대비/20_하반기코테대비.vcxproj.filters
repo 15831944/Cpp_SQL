@@ -49,6 +49,9 @@
     <Filter Include="Source Files\쿠팡CT">
       <UniqueIdentifier>{ef62b607-89f4-480f-86ea-a6ed64780132}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\자료구조활용">
+      <UniqueIdentifier>{a9b7d591-b383-4153-b291-411b95b27f3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="백준7568_덩치.cpp">
@@ -177,9 +180,6 @@
     <ClCompile Include="강의_42_이분탐색.cpp">
       <Filter>Source Files\이분탐색</Filter>
     </ClCompile>
-    <ClCompile Include="백준2110_공유기설치[dfs].cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="백준_2110_공유기설치[이분탐색SOL].cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -200,6 +200,15 @@
     </ClCompile>
     <ClCompile Include="222222.cpp">
       <Filter>Source Files\쿠팡CT</Filter>
+    </ClCompile>
+    <ClCompile Include="쿠팡4번리팩토링.cpp">
+      <Filter>Source Files\쿠팡CT</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14425문자열집합.cpp">
+      <Filter>Source Files\자료구조활용</Filter>
+    </ClCompile>
+    <ClCompile Include="백준2110_공유기설치[dfs].cpp">
+      <Filter>Source Files\DFS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
