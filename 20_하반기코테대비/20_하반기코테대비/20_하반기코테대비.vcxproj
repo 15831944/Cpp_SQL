@@ -147,6 +147,9 @@
     <ClCompile Include="Test3_승봉Sol.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="강의_46멀티태스킹(카카오 먹방 문제 변형).cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="강의_68_최소 비용 가중치 방향그래프 인접 리스트vector STL pair 자료구조.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -204,6 +207,7 @@
     <ClCompile Include="강의_86 피자 배달 거리(삼성 SW역량평가 기출문제  DFS활용.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="강의_90 라이언 킹 심바(삼성 SW역량평가 기출BFS.cpp" />
     <ClCompile Include="강의_뮤직비디오(이분검색).cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
