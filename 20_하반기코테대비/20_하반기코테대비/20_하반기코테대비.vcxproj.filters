@@ -216,6 +216,24 @@
     <ClCompile Include="강의_90 라이언 킹 심바(삼성 SW역량평가 기출BFS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="11047_백준_동전0__.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="15686_치킨배달___.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14888_연산자 끼워넣기___.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_52_Ugly Numbers[3포인트알고리즘].cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="강의53_ K진수 출력.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2583_영역구하기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="강의_가방문제_냅색알고리즘.cpp">
