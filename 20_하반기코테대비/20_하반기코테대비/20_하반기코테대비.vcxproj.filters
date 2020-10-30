@@ -237,6 +237,18 @@
     <ClCompile Include="9019_DSLR(BFS).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="백준_2573_빙산temp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2580_스도쿠h.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nnnn_늑대와양.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nnnn_안전영역.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="강의_가방문제_냅색알고리즘.cpp">
