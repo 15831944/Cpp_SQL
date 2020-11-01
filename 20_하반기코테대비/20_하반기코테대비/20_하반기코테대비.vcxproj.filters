@@ -234,9 +234,6 @@
     <ClCompile Include="백준_2583_영역구하기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="9019_DSLR(BFS).cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="백준_2573_빙산temp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -247,6 +244,30 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="백준_nnnn_안전영역.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_6593_상범빌딩_bfs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_13459_구슬탈출.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14503_로봇 청소기h.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14503_로봇청소기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_17140_이차원배열과연산.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_16234_인구이동.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_12851_숨바꼭질.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_13913_숨바꼭질4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

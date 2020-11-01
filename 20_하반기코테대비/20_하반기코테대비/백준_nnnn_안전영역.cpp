@@ -41,6 +41,7 @@ void jangma(int w)
 }
 void bfs(int x, int y)
 {
+	cnt++;
 	queue<pair<int, int>> q;
 	q.push({ x,y });
 	visit[x][y] = true;
@@ -58,14 +59,15 @@ void bfs(int x, int y)
 				continue;
 			if (visit[nx][ny])
 				continue;
-			if (map[nx][ny] == -1)
-				continue;
+		 
 			if (map[nx][ny] != -1)
+			{
 				visit[nx][ny] = true;
-			q.push({ nx,ny });
+				q.push({ nx,ny });
+			}
 		}
 	}
-	cnt++;
+	
 
 }
 int main()
@@ -82,7 +84,7 @@ int main()
 				maxNum = map[i][j];
 		}
 	}
-	for (int w = 2; w < maxNum; w++)
+	for (int w = 1; w < maxNum; w++)
 	{
 
 		cnt = 0;

@@ -26,7 +26,7 @@ DSD...
 
 */
 int n, m;
-string map[101][101] = { "", };
+string map[501][501] = { "", };
 int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
 bool check = false;
