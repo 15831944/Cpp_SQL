@@ -273,6 +273,9 @@
     <ClCompile Include="백준_2110_숫자판점프.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="백준_1780_종이의 갯수.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="강의_가방문제_냅색알고리즘.cpp">

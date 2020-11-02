@@ -14,19 +14,22 @@ using namespace std;
 1 1 1 2 1
 1 1 1 1 1
 */
-int dx[] = { -1,0,1,0 };
-int dy[] = { 0,-1,0,1 };
+int dx[] = { 1,-1,0,0 };
+int dy[] = { 0,0,-1,1 };
 
-set<string> s;
-string map[5][5];
+set<int> s;
+//string map[5][5];
+int map[5][5];
 int answer = 0;
-void dfs(int x, int y, int cnt, string strTotal)
+int tempcnt;
+void dfs(int x, int y, int cnt, int strTotal)
 {
 
 	if (cnt == 5)
 	{
 		s.insert(strTotal);
 		answer = s.size();
+		tempcnt++;
 		return;
 	}
 
@@ -36,15 +39,15 @@ void dfs(int x, int y, int cnt, string strTotal)
 		int ny = y + dy[w];
 		if (nx < 0 || nx >= 5 || ny < 0 || ny >= 5)
 			continue;
-		string temp = strTotal;
-		dfs(nx, ny, cnt + 1, strTotal += map[nx][ny]);
-		strTotal = temp;
+
+		dfs(nx, ny, cnt + 1, strTotal * 10 + map[nx][ny]);
+
 	}
 }
 int main()
 {
 	int cnt = 4;
-	set<string> s;
+	//set<string> s;
 	for (int i = 0; i < 5; i++)
 	{
 		for (int j = 0; j < 5; j++)
@@ -53,9 +56,9 @@ int main()
 		}
 	}
 
-	for (int i = 1; i <= 3; i++)
+	for (int i = 0; i < 5; i++)
 	{
-		for (int j = 1; j <= 3; j++)
+		for (int j = 0; j < 5; j++)
 		{
 			dfs(i, j, 0, map[i][j]);
 		}
