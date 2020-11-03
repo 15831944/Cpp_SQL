@@ -225,9 +225,6 @@
     <ClCompile Include="백준_14888_연산자 끼워넣기___.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="강의_52_Ugly Numbers[3포인트알고리즘].cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="강의53_ K진수 출력.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -270,11 +267,17 @@
     <ClCompile Include="백준_13913_숨바꼭질4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="백준_2110_숫자판점프.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="백준_1780_종이의 갯수.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14502_연구소.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2110_숫자판점프.cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_52_Ugly Numbers[3포인트알고리즘].cpp">
+      <Filter>Source Files\알고리즘</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -255,6 +255,7 @@
     <ClCompile Include="백준_14425문자열집합.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="백준_14502_연구소.cpp" />
     <ClCompile Include="백준_14503_로봇 청소기h.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -270,7 +271,9 @@
     <ClCompile Include="백준_17140_이차원배열과연산.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="백준_1780_종이의 갯수.cpp" />
+    <ClCompile Include="백준_1780_종이의 갯수.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="백준_2110_공유기설치[이분탐색SOL].cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
