@@ -45,9 +45,7 @@ void bfs(int x, int y)
 	queue<pair<int, int>> q;
 	q.push({ x,y });
 	visit2[x][y] = true;
-	int tempMap[10][10];
-	memcpy(tempMap, map, sizeof(tempMap));
-	
+
 	while (!q.empty())
 	{
 		int xx = q.front().first;
@@ -58,46 +56,46 @@ void bfs(int x, int y)
 			int nx = xx + dx[w];
 			int ny = yy + dy[w];
 			if (nx < 0 || nx >= n || ny < 0 || ny >= m)
-				continue; 
+				continue;
 			if (visit2[nx][ny])
 				continue;
 			if (map[nx][ny] == 1)
 				continue;
-			if (map[nx][ny] ==99)
+			if (map[nx][ny] == 99)
 			{
-				visit2[nx][ny]=true;
+				visit2[nx][ny] = true;
 				map[nx][ny] = 2;
 				q.push({ nx,ny });
 			}
 
 		}
-			
+
 	}
-	int checkNum = check();
-	maxNum = max(maxNum, checkNum);
-	if (maxNum == 30)
-	{
-		string nuaa = "asdf";
-	}
-	memcpy(map, tempMap, sizeof(map));
+	 
+
 }
 
 void dfs(int x, int y, int cnt)
 {
 	if (cnt == 3)
 	{
+		memcpy(cpymap, map, sizeof(cpymap));
 		for (int i = 0; i < n; i++)
 		{
 			for (int j = 0; j < m; j++)
 			{
-				if (map[i][j] == 2 && visit2[i][j]==false)
+				if (map[i][j] == 2 && visit2[i][j] == false)
 				{
 					bfs(i, j);
-					memset(visit2, false, sizeof(visit2));
+
 				}
 			}
 		}
-		
+		memset(visit2, false, sizeof(visit2));
+		int checkNum = check();
+		maxNum = max(maxNum, checkNum);
+		memcpy(map, cpymap, sizeof(map));
+
 		//check();
 		return;
 	}
@@ -121,8 +119,8 @@ void dfs(int x, int y, int cnt)
 			}
 		}
 	}
-	
-	
+
+
 
 
 }
@@ -134,7 +132,7 @@ int main()
 	{
 		for (int j = 0; j < m; j++)
 		{
-			
+
 			cin >> map[i][j];
 			if (map[i][j] == 0)
 				map[i][j] = 99;
