@@ -291,6 +291,9 @@
     <ClCompile Include="백준_nn로봇청소기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="프로그래머스_단체사진찍기.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="강의_가방문제_냅색알고리즘.cpp">

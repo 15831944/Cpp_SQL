@@ -44,8 +44,8 @@ using namespace std;
 
 
 int n, m;
-int map[100][100];
-int map2[100][100];
+int map[105][105];
+int map2[105][105];
 int startX;
 int startY;
 int startDir;
@@ -106,11 +106,51 @@ void bfs(int x, int y, int dir)
 			{
 				//동서남북극혐..
 				//하드코딩으로 마무리해야할듯.
-				answer = nturn + map2[nx][ny] + 1;
-			}
-			else
-			{
-				answer = nturn + map2[nx][ny];
+				if (ndir == 1)
+				{
+					if (endDir == 2)
+					{
+						answer = nturn + map2[nx][ny] + 2;
+					}
+					else
+					{
+						answer = nturn + map2[nx][ny] + 1;
+					}
+				}
+				else if (ndir == 2)
+				{
+					if (endDir == 1)
+					{
+						answer = nturn + map2[nx][ny] + 2;
+					}
+					else
+					{
+						answer = nturn + map2[nx][ny] + 1;
+					}
+
+				}
+				else if (ndir == 3)
+				{
+					if (endDir == 4)
+					{
+						answer = nturn + map2[nx][ny] + 2;
+					}
+					else
+					{
+						answer = nturn + map2[nx][ny] + 1;
+					}
+				}
+				else if (ndir == 4)
+				{
+					if (endDir == 3)
+					{
+						answer = nturn + map2[nx][ny] + 2;
+					}
+					else
+					{
+						answer = nturn + map2[nx][ny] + 1;
+					}
+				}
 			}
 
 			break;

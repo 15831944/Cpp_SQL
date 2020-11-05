@@ -127,15 +127,15 @@ int main()
 			cin >> temp;
 			for (int j = 0; j < n; j++)
 			{
-				map[j][i] = temp[j];
-				if (map[j][i] == "o")
+				map[i][j] = temp[j];
+				if (map[i][j] == "o")
 				{
-					sX = j;
-					sY = i;
+					sX = i;
+					sY = j;
 				}
-				else if (map[j][i] == "*")
+				else if (map[i][j] == "*")
 				{
-					dirty.push({ j,i });
+					dirty.push({ i,j });
 				}
 
 			}
