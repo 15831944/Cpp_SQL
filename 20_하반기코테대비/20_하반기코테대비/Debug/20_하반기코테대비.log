@@ -1,4 +1,4 @@
-﻿  백준_14502_연구소.cpp
-  LINK : C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\20_하반기코테대비\Debug\20_하반기코테대비.exe not found or not built by the last incremental link; performing full link
+﻿  백준_nn_로봇.cpp
+c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\백준_nn_로봇.cpp(88): warning C4715: 'checkDir': not all control paths return a value
   20_하반기코테대비.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\20_하반기코테대비\Debug\20_하반기코테대비.exe
   20_하반기코테대비.vcxproj -> C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\20_하반기코테대비\Debug\20_하반기코테대비.pdb (Full PDB)

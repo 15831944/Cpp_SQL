@@ -279,10 +279,16 @@
     <ClCompile Include="강의_52_Ugly Numbers[3포인트알고리즘].cpp">
       <Filter>Source Files\알고리즘</Filter>
     </ClCompile>
-    <ClCompile Include="백준_nn_암호만들기.cpp">
+    <ClCompile Include="백준_nn_유레카이론.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="백준_nn_유레카이론.cpp">
+    <ClCompile Include="백준_nn_암호만들기.cpp">
+      <Filter>Source Files\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nn_로봇.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nn로봇청소기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
