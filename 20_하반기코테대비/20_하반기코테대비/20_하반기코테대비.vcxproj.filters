@@ -57,9 +57,6 @@
     <ClCompile Include="백준7568_덩치.cpp">
       <Filter>Source Files\브루트포스</Filter>
     </ClCompile>
-    <ClCompile Include="Basic.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="백준3665_최종순위.cpp">
       <Filter>Source Files\위상정렬</Filter>
     </ClCompile>
@@ -113,12 +110,6 @@
     </ClCompile>
     <ClCompile Include="P_기지국설치.cpp">
       <Filter>Source Files\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_60_합이같은부분집합_아마존인터뷰.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_68_최소 비용 가중치 방향그래프 인접 리스트vector STL pair 자료구조.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="강의_86 피자 배달 거리(삼성 SW역량평가 기출문제  DFS활용.cpp">
       <Filter>Source Files\DFS</Filter>
@@ -180,9 +171,6 @@
     <ClCompile Include="강의_42_이분탐색.cpp">
       <Filter>Source Files\이분탐색</Filter>
     </ClCompile>
-    <ClCompile Include="백준_2110_공유기설치[이분탐색SOL].cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="1번.cpp">
       <Filter>Source Files\쿠팡CT</Filter>
     </ClCompile>
@@ -210,92 +198,113 @@
     <ClCompile Include="백준2110_공유기설치[dfs].cpp">
       <Filter>Source Files\DFS</Filter>
     </ClCompile>
-    <ClCompile Include="강의_46멀티태스킹(카카오 먹방 문제 변형).cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의_90 라이언 킹 심바(삼성 SW역량평가 기출BFS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="11047_백준_동전0__.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="15686_치킨배달___.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_14888_연산자 끼워넣기___.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="강의53_ K진수 출력.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_2583_영역구하기.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_2573_빙산temp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_2580_스도쿠h.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_nnnn_늑대와양.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_nnnn_안전영역.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_6593_상범빌딩_bfs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_13459_구슬탈출.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_14503_로봇 청소기h.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_14503_로봇청소기.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_17140_이차원배열과연산.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_16234_인구이동.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_12851_숨바꼭질.CPP">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_13913_숨바꼭질4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_1780_종이의 갯수.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_14502_연구소.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="백준_2110_숫자판점프.cpp">
       <Filter>Source Files\DFS</Filter>
     </ClCompile>
     <ClCompile Include="강의_52_Ugly Numbers[3포인트알고리즘].cpp">
       <Filter>Source Files\알고리즘</Filter>
     </ClCompile>
-    <ClCompile Include="백준_nn_유레카이론.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="백준_nn_암호만들기.cpp">
       <Filter>Source Files\DFS</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_nn_로봇.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="백준_nn로봇청소기.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="프로그래머스_단체사진찍기.cpp">
       <Filter>Source Files\시뮬레이션</Filter>
     </ClCompile>
+    <ClCompile Include="백준_17140_이차원배열과연산.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
     <ClCompile Include="백준_17140_이차원배열과연산22.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2580_스도쿠h.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_7576_토마토.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_12851_숨바꼭질.CPP">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_13459_구슬탈출.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_13913_숨바꼭질4.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14502_연구소.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14503_로봇 청소기h.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14503_로봇청소기.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2573_빙산temp.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2583_영역구하기.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_6593_상범빌딩_bfs.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14888_연산자 끼워넣기___.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_46멀티태스킹(카카오 먹방 문제 변형).cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_60_합이같은부분집합_아마존인터뷰.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_68_최소 비용 가중치 방향그래프 인접 리스트vector STL pair 자료구조.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="강의_90 라이언 킹 심바(삼성 SW역량평가 기출BFS.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="강의53_ K진수 출력.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_2110_공유기설치[이분탐색SOL].cpp">
+      <Filter>Source Files\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nn로봇청소기.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="11047_백준_동전0__.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="15686_치킨배달___.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nnnn_안전영역.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_1780_종이의 갯수.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_16234_인구이동.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nn_로봇.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nn_유레카이론.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_nnnn_늑대와양.cpp">
+      <Filter>Source Files\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_16234_인구이동2.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
+    </ClCompile>
+    <ClCompile Include="백준_14890_경사로.cpp">
+      <Filter>Source Files\시뮬레이션</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

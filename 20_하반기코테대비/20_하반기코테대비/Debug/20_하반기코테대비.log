@@ -1,14 +1,3 @@
-﻿  프로그래머스_단체사진찍기.cpp
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\프로그래머스_단체사진찍기.cpp(17): warning C4018: '<': signed/unsigned mismatch
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\프로그래머스_단체사진찍기.cpp(27): warning C4018: '<': signed/unsigned mismatch
-  백준_17140_이차원배열과연산22.cpp
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\백준_17140_이차원배열과연산22.cpp(31): warning C4018: '<': signed/unsigned mismatch
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\백준_17140_이차원배열과연산22.cpp(33): warning C4018: '<': signed/unsigned mismatch
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\백준_17140_이차원배열과연산22.cpp(35): warning C4018: '<': signed/unsigned mismatch
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\백준_17140_이차원배열과연산22.cpp(91): warning C4018: '<': signed/unsigned mismatch
-c:\users\mnsoft\desktop\d0116\cpppractice_d0116\cpp_sql\20_하반기코테대비\20_하반기코테대비\백준_17140_이차원배열과연산22.cpp(128): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  LINK : C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\20_하반기코테대비\Debug\20_하반기코테대비.exe not found or not built by the last incremental link; performing full link
-프로그래머스_단체사진찍기.obj : error LNK2005: _main already defined in 백준_17140_이차원배열과연산22.obj
-프로그래머스_단체사진찍기.obj : error LNK2005: "int answer" (?answer@@3HA) already defined in 백준_17140_이차원배열과연산22.obj
-C:\Users\mnsoft\Desktop\D0116\CppPractice_D0116\Cpp_SQL\20_하반기코테대비\Debug\20_하반기코테대비.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  백준_16234_인구이동2.cpp
+  20_하반기코테대비.vcxproj -> C:\Users\PC\Desktop\CT\Cpp_SQL\20_하반기코테대비\Debug\20_하반기코테대비.exe
+  20_하반기코테대비.vcxproj -> C:\Users\PC\Desktop\CT\Cpp_SQL\20_하반기코테대비\Debug\20_하반기코테대비.pdb (Full PDB)
