@@ -294,6 +294,9 @@
     <ClCompile Include="프로그래머스_단체사진찍기.cpp">
       <Filter>Source Files\시뮬레이션</Filter>
     </ClCompile>
+    <ClCompile Include="백준_17140_이차원배열과연산22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="강의_가방문제_냅색알고리즘.cpp">
