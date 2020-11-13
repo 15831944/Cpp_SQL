@@ -111,8 +111,13 @@
     <ClCompile Include="4번.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="백준_nn_puyopuyo.cpp" />
-    <ClCompile Include="백준_nn_봄버맨.cpp" />
+    <ClCompile Include="백준_11559_puyox2.cpp" />
+    <ClCompile Include="백준_nn_puyopuyo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="백준_nn_봄버맨.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="강의53_ K진수 출력.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

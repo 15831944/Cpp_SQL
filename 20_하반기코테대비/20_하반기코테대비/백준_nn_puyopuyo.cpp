@@ -4,6 +4,7 @@
 #include <functional>
 #include <vector>
 #include <iostream>
+#include <cstring>
 #define MAX 100
 using namespace std;
 
@@ -31,14 +32,45 @@ struct info
 };
 
 
-string map[MAX][MAX];
-bool visit[MAX][MAX];
-int delMap[MAX][MAX] = { 1, };
+string map[12][6];
+bool visit[12][6];
+ 
 queue<pair<int, int>> q;
 int dx[] = { -1,1,0,0 };
 int dy[] = { 0,0,-1,1 };
+int answer = 0;
+void resetMap()
+{
+
+	for (int i = 10; i >= 0; i--)
+	{
+		for (int j = 0; j < 6; j++)
+		{
+			if (map[i][j] == ".") continue;
+			int Tmp = i;
+
+			while (1)
+			{
+				if (Tmp == 11 || map[Tmp + 1][j] != ".") break;
+
+				map[Tmp + 1][j] = map[Tmp][j];
+				map[Tmp][j] = ".";
+				Tmp++;
+			}
+		}
+	}
+
+
+
+
+
+
+}
+
 void printmap()
 {
+	cout << endl;
+	cout << endl;
 	for (int i = 0; i < 12; i++)
 	{
 		for (int j = 0; j < 6; j++)
@@ -48,9 +80,27 @@ void printmap()
 		cout << endl;
 	}
 }
-void Pung()
+void realPung()
 {
+	for (int i = 0; i < 12; i++)
+	{
+		for (int j = 0; j < 6; j++)
+		{
+			if (visit[i][j])
+			{
+				map[i][j] = ".";
+			}
+		}
+	}
+	resetMap();
+	
+}
 
+void Pung(int x,int y)
+{
+	visit[x][y] = true;
+	q.push({ x,y });
+	int cnt = 1; 
 	while (!q.empty())
 	{
 		int Nowx = q.front().first;
@@ -64,38 +114,29 @@ void Pung()
 
 			if (nx < 0 || nx >= 12 || ny < 0 || ny >= 6)
 				continue;
+			if (visit[nx][ny])
+				continue;
 			if (map[nx][ny] != "." && !visit[nx][ny])
 			{
 				//visit[nx][ny] = true;
 				//q.push({ nx,ny });
 				if (map[nx][ny] == map[Nowx][Nowy])
 				{
+					cnt++; 
 					visit[nx][ny] = true;
 					q.push({ nx,ny });
-					delMap[nx][ny] = delMap[Nowx][Nowy] + 1;
+				 
 				}
 			}
-		}
-
+		} 
 	}
-
-
-
-}
-void realPung()
-{
-	for (int i = 0; i < 12; i++)
+	if (cnt >= 4)
 	{
-		for (int j = 0; j < 6; j++)
-		{
-			if (delMap[i][j] >= 4)
-			{
-				map[i][j] = ".";
-			}
-		}
-
+		answer++;
+		realPung();
 	}
-	printmap();
+
+ 
 }
 
 
@@ -108,25 +149,25 @@ int main()
 		for (int j = 0; j < 6; j++)
 		{
 			map[i][j] = temp[j];
-			if (map[i][j] != ".")
-			{
-				//visit[i][j] = true;
-				q.push({ i,j });
-			}
+		 
 		}
 
 	}
 
 
-	Pung();
+
 	for (int i = 0; i < 12; i++)
 	{
 		for (int j = 0; j < 6; j++)
 		{
-			cout << delMap[i][j];
+			if (map[i][j] != ".")
+			{
+				Pung(i, j);
+				memset(visit, false, sizeof(visit));
+			}
 		}
-		cout << endl;
+		 
 	}
-	realPung();
+	cout << answer << endl;
 	return 0;
 }

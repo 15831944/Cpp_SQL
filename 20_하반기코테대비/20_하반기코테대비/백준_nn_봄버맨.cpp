@@ -4,16 +4,18 @@
 #include <functional>
 #include <vector>
 #include <iostream>
-#define MAX 100
+#include <cstring>
+#define MAX 201
 using namespace std;
 /*
-6 7 4
+6 7 7
 .......
-...o...
-....o..
+...O...
+....O..
 .......
-oo.....
-oo.....
+OO.....
+OO.....
+
 
 */
 
@@ -51,6 +53,8 @@ void Pung()
 				{
 					int nx = i + dx[w];
 					int ny = j + dy[w];
+					if (nx < 0 || nx >= r || ny < 0 || ny >= c)
+						continue;
 					if (!visit[nx][ny])
 						map[nx][ny] = ".";
 				}
@@ -71,7 +75,7 @@ void fill()
 
 			if (map[i][j] == ".")
 			{
-				map[i][j] = "o";
+				map[i][j] = "O";
 			}
 
 		}
@@ -87,7 +91,7 @@ void checkPUNG()
 		for (int j = 0; j < c; j++)
 		{
 
-			if (map[i][j] == "o")
+			if (map[i][j] == "O")
 			{
 				visit[i][j] = true;
 			}
@@ -115,22 +119,34 @@ int main() {
 		if (time == 1)
 		{
 			checkPUNG();
+			if (time == n)
+			{
+				PrintMap();
+				break;
+			}
 		}
 		//后沫 气藕盲快扁
 		else if (time % 2 == 0)
 		{
+			checkPUNG();
 			fill();
+			if (time == n)
+			{
+				PrintMap();
+				break;
+			}
 		}
 		//气藕 沏
 		else if (time % 2 == 1)
 		{
 			Pung();
+			if (time == n)
+			{
+				PrintMap();
+				break;
+			}
 		}
-		if (time == n)
-		{
-			PrintMap();
-			break;
-		}
+	
 	}
 
 	return 0;
